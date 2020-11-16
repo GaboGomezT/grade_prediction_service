@@ -15,3 +15,5 @@ I chose RandomForestRegressor for fitting my data and I took the easy route of d
 * I used [Deta](https://deta.sh/) to host my API, it was pretty easy to use and they have a supportive Slack channel
 
 * To host my static website I just used [Firebase](https://firebase.google.com/)
+
+[![Foo](buy_me_coffee.png)](https://www.buymeacoffee.com/gabogomez)
