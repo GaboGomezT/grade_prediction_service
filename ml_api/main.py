@@ -8,7 +8,8 @@ from fastapi.encoders import jsonable_encoder
 from pydantic import BaseModel
 
 app = FastAPI()
-model = pickle.load(open("model.p", "rb"))
+with open("model.p", "rb") as f:
+    model = pickle.load(f)
 
 
 class Answer(BaseModel):
