@@ -3,3 +3,4 @@ pandas
 numpy
 fastapi
 uvicorn
+joblib

@@ -1,7 +1,6 @@
 import pickle
 
 import pandas as pd
-from typing import Optional
 
 from fastapi import FastAPI
 from fastapi.encoders import jsonable_encoder
@@ -31,7 +30,7 @@ async def root():
 
 
 @app.post("/grade_predict")
-async def create_item(answer: Answer):
+async def predict_student_grade(answer: Answer):
     answer_dict = jsonable_encoder(answer)
     for key, value in answer_dict.items():
         answer_dict[key] = [value]
